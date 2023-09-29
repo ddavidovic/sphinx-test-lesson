@@ -1,4 +1,4 @@
-LESSON NAME
+My first lesson using Sphinx
 ===========
 
 Intro
@@ -7,7 +7,7 @@ Intro
 
 .. prereq::
 
-   prerequisites
+   No prerequisites
 
 
 
