@@ -1,12 +1,14 @@
 Workshop on practical usage of HPC systems
-===========
+==========================================
 
-
-
+The workshop is focused on helping the researchers using computer clusters and high performance computing systems in their everyday work. 
+It aims to improve their skills on how to use such systems with ease, to increase their productivity and decrease time required to prepare, run and analyse 
+their workflows on the remote computing systems.
 
 .. prereq::
 
-   No prerequisites
+   * Basic knowledge of Linux shell command line (for lession )
+   * 
 
 
 
@@ -15,18 +17,31 @@ Workshop on practical usage of HPC systems
    :delim: ;
 
    10 min ; Introduction
-   20 min ; :doc: `filename`
-
+   20 min ; :doc:`filename`
 
 .. toctree::
-   :maxdepth: 2
-   :caption: The lesson
+  :maxdepth: 1
+  :caption: Introduction
 
-   List 1
-      List 1.1
-      List 1.2
-   JUBE
-      Jube-intro
+  welcome
+
+.. toctree::
+   :maxdepth: 1
+   :caption: HPC
+
+    HPC
+    
+.. toctree::
+   :maxdepth: 1
+   :caption: JUBE 
+
+    JUBE_intro
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Julia for HPC
+
+    Julia
 
 .. toctree::
    :maxdepth: 1
@@ -34,6 +49,8 @@ Workshop on practical usage of HPC systems
 
    quick-reference
    guide
+   About HRZZ <https://www.irb.hr/eng/Scientific-Support-Centres/Centre-for-Informatics-and-Computing/Projects/HRZZ/Scalable-high-performance-algorithms-for-future-heterogeneous-distributed-computer-systems>
+   About NCC Croatia <https://www.hpc-cc.hr/>
 
 
 
