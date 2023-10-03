@@ -7,8 +7,8 @@ their workflows on the remote computing systems.
 
 .. prereq::
 
-   * Basic knowledge of Linux shell command line (for lession )
-   * 
+   * Basic knowledge of Linux shell command line (for lession HPC)
+   * For JUBE...
 
 
 
@@ -17,31 +17,40 @@ their workflows on the remote computing systems.
    :delim: ;
 
    10 min ; Introduction
-   20 min ; :doc:`filename`
+   120 min ; Working in the Cluster environment
+   120 min ; JUBE benchmarking
+   120 min ; Julia for HPC
+
+
+.. toctree::
+  :maxdepth: 1
+  :caption: Before the workshop
+
+  preparation.md
 
 .. toctree::
   :maxdepth: 1
   :caption: Introduction
 
-  welcome
+  welcome.md
 
 .. toctree::
    :maxdepth: 1
-   :caption: HPC
-
-    HPC
+   :caption: Working in the Cluster environment
+   
+   HPC.md
     
 .. toctree::
    :maxdepth: 1
-   :caption: JUBE 
-
-    JUBE_intro
+   :caption: JUBE benchmarking
+   
+   JUBE_intro.md
 
 .. toctree::
    :maxdepth: 1
    :caption: Julia for HPC
-
-    Julia
+   
+   Julia.md
 
 .. toctree::
    :maxdepth: 1
@@ -49,8 +58,8 @@ their workflows on the remote computing systems.
 
    quick-reference
    guide
-   About HRZZ <https://www.irb.hr/eng/Scientific-Support-Centres/Centre-for-Informatics-and-Computing/Projects/HRZZ/Scalable-high-performance-algorithms-for-future-heterogeneous-distributed-computer-systems>
-   About NCC Croatia <https://www.hpc-cc.hr/>
+   About HybridScale project <https://www.irb.hr/eng/Scientific-Support-Centres/Centre-for-Informatics-and-Computing/Projects/HRZZ/Scalable-high-performance-algorithms-for-future-heterogeneous-distributed-computer-systems>
+   About NCC-HPC Croatia <https://www.hpc-cc.hr/>
 
 
 
@@ -65,9 +74,6 @@ Who is the course for?
 
 About the course
 ----------------
-
-
-
 
 
 
