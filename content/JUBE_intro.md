@@ -1,2 +1,13 @@
 Introduction to JUBE
 ====================
+
+<link rel="stylesheet" type="text/css" href="asciinema-player.css" />
+<body>
+  ...
+  <div id="demo"></div>
+  ...
+  <script src="asciinema-player.min.js"></script>
+  <script>
+    AsciinemaPlayer.create('test.cast', document.getElementById('demo'));
+  </script>
+</body>
