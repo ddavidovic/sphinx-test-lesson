@@ -36,7 +36,7 @@ their workflows on the remote computing systems.
 
 .. toctree::
    :maxdepth: 1
-   :caption: Working in the Cluster environment
+   :caption: Working on the cluster
    
    HPC.md
     
@@ -68,13 +68,15 @@ their workflows on the remote computing systems.
 Who is the course for?
 ----------------------
 
+The workshop is for young researchers, postdocs, experience researchers and developers/technician having need to use or are already using 
+large computer cluster to perform their advanced calculations, run simulations and analyse results. 
 
 
-
-
-About the course
+About the workshop
 ----------------
 
+The workshop is organized as a one-day event divided into 3 topics: Introduction to work in the cluster environment, JUBE benchmarking tool and Julia programming
+language for HPC. It is not obligatory to attend all 3 topics, the learners can choose which topics (or all of them) to attend. 
 
 
 See also

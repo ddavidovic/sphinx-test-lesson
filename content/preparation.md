@@ -1,7 +1,5 @@
-Pre-workshop preparation
-========================
 
-```{Time required}
+```{instructor-note}
     - 30 minutes
 ```
 
