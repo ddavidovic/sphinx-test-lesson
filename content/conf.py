@@ -17,10 +17,10 @@
 
 # -- Project information -----------------------------------------------------
 
-project = "LESSON NAME"
+project = "HRZZ Training Course"
 copyright = "2021, The contributors"
 author = "The contributors"
-github_user = "ENCCS"
+github_user = "hybridscale"
 github_repo_name = ""  # auto-detected from dirname if blank
 github_version = "main"
 conf_py_path = "/content/"  # with leading and trailing slash

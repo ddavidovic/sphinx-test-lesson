@@ -16,7 +16,7 @@ Intro
    :delim: ;
 
    10 min ; Introduction
-   20 min ; :doc:`filename`
+   20 min ; :doc: `filename`
 
 
 .. toctree::
