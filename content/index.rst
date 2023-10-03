@@ -1,4 +1,4 @@
-My first lesson using Sphinx
+Workshop on practical usage of HPC systems
 ===========
 
 Intro
@@ -15,6 +15,7 @@ Intro
    :widths: auto
    :delim: ;
 
+   10 min ; Introduction
    20 min ; :doc:`filename`
 
 
@@ -29,6 +30,7 @@ Intro
 
    quick-reference
    guide
+   JUBE
 
 
 
