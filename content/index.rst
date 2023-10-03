@@ -1,7 +1,6 @@
 Workshop on practical usage of HPC systems
 ===========
 
-Intro
 
 
 
@@ -20,9 +19,14 @@ Intro
 
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: The lesson
 
+   List 1
+      List 1.1
+      List 1.2
+   JUBE
+      Jube-intro
 
 .. toctree::
    :maxdepth: 1
@@ -30,7 +34,6 @@ Intro
 
    quick-reference
    guide
-   JUBE
 
 
 
