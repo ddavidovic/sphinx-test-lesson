@@ -89,6 +89,7 @@ html_context = {
     "conf_py_path": conf_py_path,
 }
 
+html_extra_path = ['extra']
 # Intersphinx mapping.  For example, with this you can use
 # :py:mod:`multiprocessing` to link straight to the Python docs of that module.
 # List all available references:
