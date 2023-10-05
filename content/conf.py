@@ -89,7 +89,7 @@ html_context = {
     "conf_py_path": conf_py_path,
 }
 
-html_extra_path = ['extra']
+#html_extra_path = ['extra']
 # Intersphinx mapping.  For example, with this you can use
 # :py:mod:`multiprocessing` to link straight to the Python docs of that module.
 # List all available references:
@@ -127,3 +127,6 @@ DIRECTIVES = [SignatureDirective, ParametersDirective, TypealongDirective]
 def setup(app):
     for obj in DIRECTIVES:
         app.add_directive(obj.cssname(), obj)
+
+import shutil
+shutil.copytree("extra", "../_build/dirhtml/extra" , dirs_exist_ok=True)
