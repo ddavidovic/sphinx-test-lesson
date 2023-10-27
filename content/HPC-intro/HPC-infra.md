@@ -32,6 +32,7 @@ Access to the cluster is limited to the RBI network for security purposes and ca
 
 To request access, please send an email to [orthus-info@irb.hr](mailto:orthus-info@irb.hr)
 ```
+---
 
 ## HPC systems in Croatia
 
@@ -148,7 +149,7 @@ The complete technical information on all EuroHPC JU Supercomputer systems (as o
 ```
 
 ```{figure} ../img/EuroHPC_access_modes.png
-Types of access to EuroHPC supercomputers. Table taken from [Hrvatki centar kompetencija za HPC - EuroHPC resursi](https://www.hpc-cc.hr/EuroHPC_resursi).
+Types of access to EuroHPC supercomputers. Table taken from [Hrvatski centar kompetencija za HPC - EuroHPC resursi](https://www.hpc-cc.hr/EuroHPC_resursi).
 ```
 
 ```{callout} What are the conditions for access?
@@ -166,10 +167,9 @@ The Development and Benchmark calls are continuously open, with deadlines set fo
 
 Detailed information on Access Policy can be found [here](https://eurohpc-ju.europa.eu/access-our-supercomputers/access-policy-and-faq_en).
 
-```{challenge} You need help?
+An examples of the EuroHPC-JU Benchmark [call](https://eurohpc-ju.europa.eu/eurohpc-ju-call-proposals-benchmark-access_en) will all needed information and the total amount of resources available per each EuroHPC-JU supercomputer.
 
-As the EDIH [AI4Health.Cro](https://ai4healthcro.eu/), we are here to assist you in defining your requirements, identifying the most suitable HPC resources for your needs, and guiding you through the process of application for accessing the HPC resources.
-```
+---
 
 ## Private HPC providers
 
@@ -197,4 +197,9 @@ Remote access to the cluster. Two types of access modes:
 - Additional storage has to be paid (1 TB)
 ```
 
-### Cloud providers???
+---
+
+```{challenge} You need help?
+
+As the EDIH [AI4Health.Cro](https://ai4healthcro.eu/), we are here to assist you in defining your requirements, identifying the most suitable HPC resources for your needs, and guiding you through the process of application for accessing the HPC resources.
+```
