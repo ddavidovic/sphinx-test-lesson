@@ -1,4 +1,3 @@
-
 ```{instructor-note}
     - 30 minutes
 ```

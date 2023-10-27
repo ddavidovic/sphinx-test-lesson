@@ -5,17 +5,16 @@ The workshop is focused on helping the researchers using computer clusters and h
 It aims to improve their skills on how to use such systems with ease, to increase their productivity and decrease time required to prepare, run and analyse 
 their workflows on the remote computing systems.
 
-.. prereq::
-
-   * Basic knowledge of Linux shell command line (for lession HPC)
-   * For JUBE...
+.. .. prereq::
+..   * Basic knowledge of Linux shell command line (for lession HPC)
+..   * For JUBE...
 
 
 
 .. csv-table::
    :widths: auto
    :delim: ;
-
+ 
    10 min ; Introduction
    120 min ; Working in the Cluster environment
    120 min ; JUBE benchmarking
@@ -30,15 +29,28 @@ their workflows on the remote computing systems.
 
 .. toctree::
   :maxdepth: 1
-  :caption: Introduction
+  :caption: Welcome
 
   welcome.md
 
 .. toctree::
    :maxdepth: 1
+   :caption: Introduction to HPC
+   
+   HPC-intro/HPC-intro.md
+   HPC-intro/HPC-examples.md
+   HPC-intro/HPC-arch.md
+   HPC-intro/HPC-parallel.md
+   HPC-intro/HPC-infra.md
+
+.. toctree::
+   :maxdepth: 1
    :caption: Working on the cluster
    
-   HPC.md
+   Working-on-Cluster/Introduction.md
+   Working-on-Cluster/System-overview.md
+   Working-on-Cluster/Access-Public-Key.md
+   Working-on-Cluster/Running-jobs.md
     
 .. toctree::
    :maxdepth: 1
@@ -73,7 +85,7 @@ large computer cluster to perform their advanced calculations, run simulations a
 
 
 About the workshop
-----------------
+------------------
 
 The workshop is organized as a one-day event divided into 3 topics: Introduction to work in the cluster environment, JUBE benchmarking tool and Julia programming
 language for HPC. It is not obligatory to attend all 3 topics, the learners can choose which topics (or all of them) to attend. 

@@ -1,2 +1,1 @@
-Welcome and introduction
-========================
+# Welcome and introduction
