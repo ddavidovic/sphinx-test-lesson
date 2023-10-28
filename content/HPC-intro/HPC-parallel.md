@@ -1,3 +1,7 @@
-# HPC is all about parallel
+# Parallel computing
 
+To be added...
+
+<!--
 ## Serial vs. parallel computing
+-->

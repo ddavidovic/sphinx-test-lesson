@@ -2,7 +2,7 @@
 
 <!-- Pogledati dokument EuroCC_booklet_2023 u EUROCC2/Documents folderu -->
 
-## What is it used for?
+<!--## What is it used for?
  - Drivers for HPC
  - Examples of usage
 
@@ -11,3 +11,6 @@
 Quantify brain damage and clinical prognosis
 
 ## Improve the Speech-Recognition Technology with Speechly
+-->
+
+To be added...

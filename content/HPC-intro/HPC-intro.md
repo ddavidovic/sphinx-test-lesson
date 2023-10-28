@@ -43,14 +43,21 @@ Think of 3 possible challanges if you would have to split and process your work 
 
 ## What is HPC?
 
-High Performance Computing (HPC) refers to the practice of utilizing very large computers (supercomputers, clusters) to perform computationally and memory extremely intensive tasks at high speeds using parallel processing.
+**High Performance Computing (HPC)** refers to the practice of utilizing **very large computers** (supercomputers, clusters) to perform **computationally** and memory **intensive tasks** at **high speeds** using **parallel processing**.
 HPC involves usage of advanced hardware and software to solve extremely complex problem that go beyond the capabilities of conventional computational systems.
 
-```{figure} ../img/HPC-map-2.png
+<!--```{figure} ../img/HPC-map-2.png
+:height: 12cm
+Overview of HPC
+```
+-->
+
+```{figure} ../img/HPC-map-3.png
 :height: 12cm
 Overview of HPC
 ```
 
+<!--
 ## Parallel machine
 ```{figure} ../img/Fully-Connected-Network-Topology-diagram.png
 Adapted from [Fully Connected Network Topology Diagram](https://www.conceptdraw.com/How-To-Guide/fully-connected-network-topology)
@@ -58,4 +65,4 @@ Adapted from [Fully Connected Network Topology Diagram](https://www.conceptdraw.
 In HPC word, each computer in the network is called `compute node`.
 
 - Definition of HPC + concept map
-
+-->
