@@ -19,8 +19,8 @@
 
 #project = "HRZZ Training Course"
 project = "EDIH AI4Health.Cro Training Course"
-copyright = "2023, The contributors"
-author = "The contributors"
+copyright = "2023, Ruđer Bošković Institute and EDIH AI4Health.CRO"
+author = "Davor Davidović"
 github_user = "hybridscale"
 github_repo_name = ""  # auto-detected from dirname if blank
 github_version = "main"

@@ -42,3 +42,8 @@ No prerequisits required
 
 Project "Scalable high-performance algorithms for future heterogeneous distributed computer systems" funded by the Croatian Science Foundation under grant number HRZZ-UIP-2020-02-4559.
 -->
+
+## Contacts
+
+- **EDIH AI4Health.CRO** - [contact support](https://ai4healthcro.eu/?page_id=1422)
+- **Davor Davidović** - EDIH AI4Health.CRO HPC leader ([email](mailto:davor.davidovic@irb.hr))
