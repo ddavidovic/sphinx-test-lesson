@@ -1,22 +1,18 @@
 Workshop on practical usage of HPC systems
 ==========================================
 
-The workshop is focused on helping the researchers using computer clusters and high performance computing systems in their everyday work. 
-It aims to improve their skills on how to use such systems with ease, to increase their productivity and decrease time required to prepare, run and analyse 
-their workflows on the remote computing systems.
-
-.. .. prereq::
-..   * Basic knowledge of Linux shell command line (for lession HPC)
-..   * For JUBE...
-
-
+The workshop is dedicated to supporting researchers who utilize computer clusters and 
+high-performance computing systems as part of their daily tasks. Its primary goal is 
+to enhance their proficiency in utilizing these systems efficiently, thereby boosting 
+productivity and reducing the time needed to prepare, execute, and analyze their workflows 
+on remote computing platforms.
 
 .. csv-table::
    :widths: auto
    :delim: ;
  
-   10 min ; Introduction
-   120 min ; Working in the Cluster environment
+   120 min ; Introduction to HPC
+   120 min ; Working on the Cluster
    120 min ; JUBE benchmarking
    120 min ; Julia for HPC
 
@@ -28,16 +24,11 @@ their workflows on the remote computing systems.
   preparation.md
 
 .. toctree::
-  :maxdepth: 1
-  :caption: Welcome
-
-  welcome.md
-
-.. toctree::
    :maxdepth: 1
    :caption: Introduction to HPC
    
    HPC-intro/HPC-intro.md
+   HPC-intro/HPC-def.md
    HPC-intro/HPC-examples.md
    HPC-intro/HPC-arch.md
    HPC-intro/HPC-parallel.md
@@ -69,9 +60,10 @@ their workflows on the remote computing systems.
    :caption: Reference
 
    quick-reference
-   guide
-   About HybridScale project <https://www.irb.hr/eng/Scientific-Support-Centres/Centre-for-Informatics-and-Computing/Projects/HRZZ/Scalable-high-performance-algorithms-for-future-heterogeneous-distributed-computer-systems>
-   About NCC-HPC Croatia <https://www.hpc-cc.hr/>
+   EDIH AI4Health.CRO <https://ai4healthcro.eu>
+   HybridScale project <https://www.irb.hr/eng/Scientific-Support-Centres/Centre-for-Informatics-and-Computing/Projects/HRZZ/Scalable-high-performance-algorithms-for-future-heterogeneous-distributed-computer-systems>
+   NCC-HPC Croatia <https://www.hpc-cc.hr/>
+
 
 
 
@@ -90,13 +82,11 @@ About the workshop
 The workshop is organized as a one-day event divided into 3 topics: Introduction to work in the cluster environment, JUBE benchmarking tool and Julia programming
 language for HPC. It is not obligatory to attend all 3 topics, the learners can choose which topics (or all of them) to attend. 
 
-
-See also
---------
-
-
-
-
+The workshop is structured as a one-day event, covering four distinct topics: 
+an introduction to high-performance computing, working in a cluster environment, the JUBE benchmarking tool, 
+and programming with the Julia language for high-performance computing. 
+Attendance at all four topics is not mandatory; learners have the flexibility to choose the specific 
+topics they wish to attend.
 
 Credits
 -------
@@ -141,11 +131,3 @@ With the understanding that:
 - No warranties are given. The license may not give you all of the permissions
   necessary for your intended use. For example, other rights such as
   publicity, privacy, or moral rights may limit how you use the material.
-
-
-Software
-^^^^^^^^
-
-Except where otherwise noted, the example programs and other software provided
-with this repository are made available under the `OSI <http://opensource.org/>`__-approved
-`MIT license <https://opensource.org/licenses/mit-license.html>`__.
