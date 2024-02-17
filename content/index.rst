@@ -37,27 +37,27 @@ on remote computing platforms.
 .. toctree::
    :maxdepth: 1
    :caption: Working on the cluster
-   
+
    Working-on-Cluster/Introduction.md
    Working-on-Cluster/System-overview.md
    Working-on-Cluster/Access-Public-Key.md
    Working-on-Cluster/Running-jobs.md
-    
-.. toctree::
-   :maxdepth: 1
-   :caption: JUBE benchmarking
-   
-   JUBE_intro.md
+..    
+   .. toctree::
+      :maxdepth: 1
+      :caption: JUBE benchmarking
+      
+      JUBE_intro.md
+
+   .. toctree::
+      :maxdepth: 1
+      :caption: Julia for HPC
+      
+      Julia.md
 
 .. toctree::
    :maxdepth: 1
-   :caption: Julia for HPC
-   
-   Julia.md
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Reference
+   :caption: References
 
    quick-reference
    EDIH AI4Health.CRO <https://ai4healthcro.eu>

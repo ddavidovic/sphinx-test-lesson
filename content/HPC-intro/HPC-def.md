@@ -1,6 +1,31 @@
-# High-Performance Computing
+# Introduction
 
 ## History
+
+- 1940-1960s: the first supercomputers
+  - Military-driven evolution
+  - First modern computers developed in WWII (ENIAC - Electronic Numerical Integrator and Computer)
+  
+```{figure} ../img/eniac.jpg
+ENIAC in Philadelphia, Pennsylvania. Glen Beck (background) and Betty Snyder (foreground) program the ENIAC in building 328 at the Ballistic Research Laboratory (BRL). Figure taken from [Wikipedia](https://hr.wikipedia.org/wiki/ENIAC).
+```
+
+- Cold War: code breaking, intelligence gathering and processing, weapon design
+  - ILLIAC-IV
+    - Began in 1966; goal was 1 GFLOP/s; estimated cost $8 million
+    - finished in 1972 at a cost of $31 million and a top speed below 1 GFLOP/s  
+- 1975-1990: the Cray era
+  - The speed was primarily achieved through two mechanisms:
+    - vector processors
+    - share memory multiprocessing
+  - Believe that vector processors are better approach for HPC than using smaller processors. Saymour Cray once said: "If you were plowing a field, which would you rather use? Two strong oxen or 1024 chickens?"
+- 1990-2010: the cluster era
+  - Distributed memory computers emerged during 1980s
+  - first cluster built in 1994 by Becker and Striling at NASA using available PCs and networking hardware (16 Intel 486DX PCs, 10 Mb/s Ethernet, 1 GFLOP/s) - named Beowulf
+- 2010-present: the accelerator (GPU) and hybrid era
+  - Increasing number of processor cores, not processor speeds
+  - Development of GPUs and other accelerators
+  - Today's supercomputers are hybrid clusters mixed of traditional processors and the accelerators
 
 ## Significance
 

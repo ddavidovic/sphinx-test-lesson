@@ -1,16 +1,16 @@
-# Introduction
+# About the course
 
 ```{questions}
-1. What is the High-Performance Computing (HPC)?
-2. Where it is used for and how?
-3. What infrastructure is available and how to access it?
+1. What is the High-Performance Computing (HPC) and what sets it apart from conventional computing?
+2. In what domains and scenarios is HPC utilized, and how does it enhance computational capabilities and performance?
+3. What are the available infrastructures and what procedures are involved in accessing them effectively?
 ```
 
 ```{objectives}
-- Learn what HPC is and understand the difference between the 'standard' computing
-- Identify for which types of problems the HPC can be used for
-- Understand the basic concepts and terminology of HPC 
-- Learn about the available HPC infrastructure in Croatia and EU and how to get access
+- Gain understanding of HPC and its distinctions from conventional computing paradigms.
+- Identify the types of computational problems that benefit from HPC and scenarios where HPC is most advantageous.
+- Understand the fundamental concepts and terminology relevant for HPC including parallel processing and distributed computing. 
+- Explore the existing HPC infrastructure within Croatia and the European Union and learn the procedure for accessing these resources.
 ```
 
 ```{prereq}
