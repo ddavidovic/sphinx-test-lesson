@@ -9,3 +9,12 @@ To be added...
  - What HPC can do and what cannot do?
 -->
 
+## Types of HPC architecture
+
+### CPU
+
+### GPU
+
+### Clusters
+
+### Supercomputers

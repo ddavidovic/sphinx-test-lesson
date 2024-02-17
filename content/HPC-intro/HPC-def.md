@@ -1,5 +1,9 @@
 # High-Performance Computing
 
+## History
+
+## Significance
+
 ## The roots of HPC in modern science
 In modern science there are 3 methodologies: (staviti sliku umjesto list)
   1. Theory

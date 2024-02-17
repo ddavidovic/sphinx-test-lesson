@@ -12,5 +12,12 @@ Quantify brain damage and clinical prognosis
 
 ## Improve the Speech-Recognition Technology with Speechly
 -->
+## Case studies
 
-To be added...
+## Applications
+
+### Artificial Inteligence
+
+### Fluid dynamics
+
+### Weather forecasting

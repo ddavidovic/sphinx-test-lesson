@@ -110,10 +110,14 @@ In 2018, the European High-Performance Computing Joint Undertaking ([EuroHPC JU]
 
 ### EuroHPC JU supercomputers
 
-Currently there are [8 supercomputers](https://eurohpc-ju.europa.eu/supercomputers/our-supercomputers_en), 3 pre-exascale supercomputers and 5 petascale supercomputers
+Currently there are [10 supercomputers](https://eurohpc-ju.europa.eu/supercomputers/our-supercomputers_en), 3 pre-exascale supercomputers and 5 petascale supercomputers, and one exascale (JUPITER).
 
-```{figure} ../img/eurohpc-computers-location.png
-Sitel locations of EuroHPC JU supercomputer locations. Figure taken from [EuroHPC Systems Report - September 2021](https://eurohpc-ju.europa.eu/document/download/4fd55c3d-8051-4820-8ec8-555c9dbe64a7_en?filename=EuroHPC%20Systems%20Report-Sep2021.pdf).
+<!--```{figure} ../img/eurohpc-computers-location.png
+Site locations of EuroHPC JU supercomputer locations. Figure taken from [EuroHPC Systems Report - September 2021](https://eurohpc-ju.europa.eu/document/download/4fd55c3d-8051-4820-8ec8-555c9dbe64a7_en?filename=EuroHPC%20Systems%20Report-Sep2021.pdf).
+```-->
+
+```{figure} ../img/eurohpc-computers.png
+Site locations of EuroHPC JU supercomputer locations. Figure taken from [EuroHPC Systems Report - April 2023][(https://eurohpc-ju.europa.eu/document/download/4fd55c3d-8051-4820-8ec8-555c9dbe64a7_en?filename=EuroHPC%20Systems%20Report-Sep2021.pdf](https://eurohpc-ju.europa.eu/document/download/f43c0ad2-d486-42e7-a543-59bd8314b269_en?filename=ED-8984_CORDIS_LotB_PiP%20on%20European%20supercomputing_2nd%20ed_Brochure_LR%20ac.pdf).
 ```
 
 - Pre-exascale
