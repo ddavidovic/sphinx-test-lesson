@@ -1,35 +1,44 @@
 # Introduction
 
 ## History
+---
 
-- 1940-1960s: the first supercomputers
-  - Military-driven evolution
-  - First modern computers developed in WWII (ENIAC - Electronic Numerical Integrator and Computer)
+### 1940-1960s: the first supercomputers
+- Military-driven evolution
+- First modern computers developed in WWII ([ENIAC](https://www.britannica.com/technology/ENIAC) - Electronic Numerical Integrator and Computer)
   
 ```{figure} ../img/eniac.jpg
 ENIAC in Philadelphia, Pennsylvania. Glen Beck (background) and Betty Snyder (foreground) program the ENIAC in building 328 at the Ballistic Research Laboratory (BRL). Figure taken from [Wikipedia](https://hr.wikipedia.org/wiki/ENIAC).
 ```
 
 - Cold War: code breaking, intelligence gathering and processing, weapon design
-  - ILLIAC-IV
-    - Began in 1966; goal was 1 GFLOP/s; estimated cost $8 million
-    - finished in 1972 at a cost of $31 million and a top speed below 1 GFLOP/s  
-- 1975-1990: the Cray era
-  - The speed was primarily achieved through two mechanisms:
-    - vector processors
-    - share memory multiprocessing
-  - Believe that vector processors are better approach for HPC than using smaller processors. Saymour Cray once said: "If you were plowing a field, which would you rather use? Two strong oxen or 1024 chickens?"
-- 1990-2010: the cluster era
-  - Distributed memory computers emerged during 1980s
-  - first cluster built in 1994 by Becker and Striling at NASA using available PCs and networking hardware (16 Intel 486DX PCs, 10 Mb/s Ethernet, 1 GFLOP/s) - named Beowulf
-- 2010-present: the accelerator (GPU) and hybrid era
-  - Increasing number of processor cores, not processor speeds
-  - Development of GPUs and other accelerators
-  - Today's supercomputers are hybrid clusters mixed of traditional processors and the accelerators
+- [ILLIAC-IV](https://en.wikipedia.org/wiki/ILLIAC_IV)
+  - Began in 1966; goal was 1 GFLOP/s; estimated cost $8 million
+  - finished in 1972 at a cost of $31 million and a top speed far below 1 GFLOP/s 
+  
+### 1975-1990: the Cray era
+- The speed was primarily achieved through two mechanisms:
+  - vector processors
+  - share memory multiprocessing
+- [CRAY-1](https://en.wikipedia.org/wiki/Cray-1) - the first supercomputer to successfully implement the vector processor design.
+- The first GFLOP/s supercomputer - [CRAY-2](https://en.wikipedia.org/wiki/Cray-2) (1985). 
 
-## Significance
+### 1990-2010: the cluster era
+- More vector processors (>8) results in memory contention -> slows down the computation
+- Solution: distributed memory systems where each processor has its own memory.
+- first cluster built in 1994 by Becker and Striling at NASA using available PCs and networking hardware (16 Intel 486DX PCs, 10 Mb/s Ethernet, 1 GFLOP/s) - named Beowolf
 
-## The roots of HPC in modern science
+```{figure} ../img/Beowolf2-300x174.jpg
+An example of a Beowolf Cluster. Figure taken from [https://memim.com/beowulf-cluster.html](https://memim.com/beowulf-cluster.html).
+```
+
+### 2010-present: the accelerator (GPU) and hybrid era
+- Increasing number of processor cores, not processor speeds.
+- Development of GPUs and other accelerators.
+- Today's supercomputers are hybrid clusters mixed of traditional processors and the accelerators. 
+
+
+<!--## The roots of HPC in modern science
 In modern science there are 3 methodologies: (staviti sliku umjesto list)
   1. Theory
   2. Experimentation
@@ -49,23 +58,45 @@ Parallel computing - split work into smaller pieces and divide it among numerous
 
 ```{challenge} Challanges of parallel computing
 Think of 3 possible challanges if you would have to split and process your work among several linked processors (computers).
-```
----
+```-->
 
 ## What is HPC?
+---
 
 **High Performance Computing (HPC)** refers to the practice of utilizing **very large computers** (supercomputers, clusters) to perform **computationally** and memory **intensive tasks** at **high speeds** using **parallel processing**.
 HPC involves usage of advanced hardware and software to solve extremely complex problem that go beyond the capabilities of conventional computational systems.
 
-<!--```{figure} ../img/HPC-map-2.png
-:height: 12cm
-Overview of HPC
-```
--->
-
 ```{figure} ../img/HPC-map-3.png
 :height: 12cm
 Overview of HPC
+```
+
+## Why HPC?
+
+- Grand Challanges (defined by USA NFS) - the fundamental problems of science and engineering whose solution would be enables by high-performance computing
+  - Advanced New Materials
+  - Prediction of Climate Change
+  - Quantum Chromodynamics and Condensed Matter Theory
+  - Semiconductor Design and Manufacturing
+  - Assembling the Tree of Life
+  - Drug Design and Development
+  - Energy through Fusion
+  - Water Sustainability
+  - Understanding Biological Systems
+  - New Combustion Systems
+  - Astronomy and Cosmology
+  - Hazard Analysis and Management
+  - Human Science and Policy
+  - Virtual Product Design
+  - Cancer Detection and Therapy  
+  
+
+```{callout} Why HPC?
+HPC provides the ability to solve bigger and more complex problems: You can tackle **bigger problems in the same amount of time** and/or you can solve **the same sized problems in less time**.
+```
+
+```{challenge} Where to use HPC?
+Think of a task that you cannot currently solve on your local computer, but which could be solved on a supercomputer or computer cluster.
 ```
 
 <!--
