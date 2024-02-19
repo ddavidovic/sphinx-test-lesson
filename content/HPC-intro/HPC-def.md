@@ -91,8 +91,10 @@ Overview of HPC
   - Cancer Detection and Therapy  
   
 
-```{callout} Why HPC?
-HPC provides the ability to solve bigger and more complex problems: You can tackle **bigger problems in the same amount of time** and/or you can solve **the same sized problems in less time**.
+```{callout} The main reason for having HPC
+To be able to solve bigger and more complex problems!
+
+You can tackle **bigger problems in the same amount of time** and/or you can solve **the same sized problems in less time**.
 ```
 
 ```{challenge} Where to use HPC?

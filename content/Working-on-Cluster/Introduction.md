@@ -1,8 +1,8 @@
 # Working on the Cluster
 
 ```{prereq}
-- Basic knowledge of working in the command line (bash) environment
-- Understanding on the basic HPC concepts and distributed computing architectures
+- Basic knowledge of working in the command line environment (bash)
+- Understanding of basic HPC concepts and architectures for distributed computing
 ```
 
 Materials from [A Beginner's Guide to Using a Supercomputer](https://enccs.se/news/2023/08/hpc-for-beginners/)
