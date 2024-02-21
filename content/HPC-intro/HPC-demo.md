@@ -41,6 +41,7 @@ The clusters use resource management and job submission systems - the compute no
 ```{figure} ../img/demo-run.png
 An example of a typical HPC workflow.
 ```
+
 ---
 ### Generate SSH keys
 
@@ -49,7 +50,6 @@ The first step is to authenticate the computer from which you plan to access the
 <link rel="stylesheet" type="text/css" href="../../_static/asciinema-player.css" />
 <body>
   <div id="sshkey-gen"></div>
-  ...
   <script src="../../_static/asciinema-player.min.js"></script>
   <script>
     AsciinemaPlayer.create('../../extra/keygen.cast', document.getElementById('sshkey-gen'), {
@@ -58,21 +58,40 @@ The first step is to authenticate the computer from which you plan to access the
       terminalFontSize: 'medium',
       cols: 100,
       rows: 30,
-      markers: [8.85],
-      pauseOnMarkers: true
       });
   </script>
 </body>
 
 
+---
+### Upload public-key
 
-### Upload public-key to Supek
+After the key pairs is created, the public key (the one with the extension `*.pub`) has to be uploaded to your account on *compute.srce.hr*. Once it is uploaded it will be automaticaly copied to the `home` folder
+<body>
+  <video width="640" height="360" controls>
+    <source src="../../extra/add-key-to-supek.webm" type="video/webm">
+    Your browser does not support the video tag.
+  </video>
+</body>
 
 
-### Loggin to login node
+### Loggin to the cluster (login node)
 
-To log into to the Supek, we have to connect to the GPU login node: *login-gpu.hpc.srce.hr*.
+To log into to the Supek, we have to connect to the GPU login node: *login-gpu.hpc.srce.hr* by providing your user name and the path to the private key file.
 
-
+<link rel="stylesheet" type="text/css" href="/_static/asciinema-player.css" />
+<body>
+  <div id="login-supek"></div>
+  <script src="/_static/asciinema-player.min.js"></script>
+  <script>
+    AsciinemaPlayer.create('/extra/login-supek.cast', document.getElementById('login-supek'), {
+      loop: false,
+      fit: "width",
+      terminalFontSize: 'medium',
+      cols: 100,
+      rows: 30,
+      });
+  </script>
+</body>
 
 Add figure Authentication -> Logging in -> Copying files -> Nodes and partitions -> Modules -> Running jobs with PBS (qsub) -> Running jobs with batch scripts (qsub)
