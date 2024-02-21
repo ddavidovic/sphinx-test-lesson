@@ -1,10 +1,12 @@
 # Parallel computing
 
-To be added...
-
 <!--
 ## Serial vs. parallel computing
 -->
+
+```{figure} ../img/dist-share-mem.png
+Shared-memory vs. distributed-memory system arhitecture.
+```
 
 ## Parallel programming models
 
@@ -14,9 +16,12 @@ To be added...
 
 ### CUDA/ROCm
 
+```{figure} ../img/gpu_acceleration.png
+Heterogeneous programming model. Figure taken from [https://es.mathworks.com/help/gpucoder/gs/gpu-prog-paradigm.html](https://es.mathworks.com/help/gpucoder/gs/gpu-prog-paradigm.html)
+```
+Highly parallelizabile portions of the code are executed on the GPU devices, while the reminder of the code or sequential parts are still executed on the CPU.
 
 ## Measuring the performance
----
 
 ```{Callout} Measure of computer performance
 **Floating-point operations per second (FLOPS)**: Number of floating-point artihmetic calculations that the processor can perform within a second.

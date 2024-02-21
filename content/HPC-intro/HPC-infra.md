@@ -120,6 +120,8 @@ Site locations of EuroHPC JU supercomputer locations. Figure taken from [EuroHPC
 Site locations of EuroHPC JU supercomputer locations. Figure taken from [EuroHPC Systems Report - April 2023][(https://eurohpc-ju.europa.eu/document/download/4fd55c3d-8051-4820-8ec8-555c9dbe64a7_en?filename=EuroHPC%20Systems%20Report-Sep2021.pdf](https://eurohpc-ju.europa.eu/document/download/f43c0ad2-d486-42e7-a543-59bd8314b269_en?filename=ED-8984_CORDIS_LotB_PiP%20on%20European%20supercomputing_2nd%20ed_Brochure_LR%20ac.pdf).
 ```
 
+- Exascale (Europe's first exascale)
+  - [JUPITER](https://www.fz-juelich.de/en/ias/jsc/jupiter) (arrival in 2024?), [Forschungszentrum Juelich](https://www.fz-juelich.de/en), Juelich, Germany
 - Pre-exascale
   - [LUMI](https://www.lumi-supercomputer.eu/lumi_supercomputer/), [CSC](https://www.csc.fi/) - IT Centre for Science, Kajaani, Finland
   - [Leonardo](https://leonardo-supercomputer.cineca.eu/), [CINECA](https://www.cineca.it/en/), Bologna, Italy
@@ -131,8 +133,6 @@ Site locations of EuroHPC JU supercomputer locations. Figure taken from [EuroHPC
   - [Karolina](https://www.it4i.cz/en/infrastructure/karolina), [IT4Innovations](https://www.it4i.cz/en) National Supercomputing Center, Ostrava, Czech Republic
   - [Discoverer](https://sofiatech.bg/en/petascale-supercomputer/), [Sofia Tech Park](https://sofiatech.bg/en/), Sofia, Bulgaria
   - [Deucalion](https://macc.fccn.pt/resources#deucalion), [MACC](https://macc.fccn.pt/), Guimaraes, Portugal
-- Exascale (Europe's first exascale)
-  - [JUPITER](https://www.fz-juelich.de/en/ias/jsc/jupiter) (arrival in 2024?), [Forschungszentrum Juelich](https://www.fz-juelich.de/en), Juelich, Germany
 
 The complete technical information on all EuroHPC JU Supercomputer systems (as of September 2012) can be found [here](https://prace-ri.eu/wp-content/uploads/EuroHPC-Systems-Report-Sep_2021.pdf).
 

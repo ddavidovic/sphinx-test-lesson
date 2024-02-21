@@ -1,7 +1,6 @@
 # Introduction
 
 ## History
----
 
 ### 1940-1960s: the first supercomputers
 - Military-driven evolution
@@ -60,20 +59,35 @@ Parallel computing - split work into smaller pieces and divide it among numerous
 Think of 3 possible challanges if you would have to split and process your work among several linked processors (computers).
 ```-->
 
-## What is HPC?
 ---
+
+## What is HPC?
 
 **High Performance Computing (HPC)** refers to the practice of utilizing **very large computers** (supercomputers, clusters) to perform **computationally** and memory **intensive tasks** at **high speeds** using **parallel processing**.
 HPC involves usage of advanced hardware and software to solve extremely complex problem that go beyond the capabilities of conventional computational systems.
+
+What is High-Performance Computing - [YouTube](https://www.youtube.com/watch?v=IniYMq2bJRI&t=1s) (Croatian).
 
 ```{figure} ../img/HPC-map-3.png
 :height: 12cm
 Overview of HPC
 ```
 
+```{challenge} The main features of HPC
+- processing at **high-speeds**
+- **parallel and distributed** programming and architectures
+- solving **big** and **complex** problems
+```
+
 ## Why HPC?
 
-- Grand Challanges (defined by USA NFS) - the fundamental problems of science and engineering whose solution would be enables by high-performance computing
+- Personal computers often lack the processing power and memory capacity needed.
+- High-performance GPUs may not be readily available.
+- Large volumes of computational tasks need to be processed.
+- Access to a diverse range of specialized software programs is required.
+- Seamless access to extensive data repositories and databases is essential.
+
+Many research and engineering problems today are beyond the capabilities of personal computers and even workstations. The US National Science Foundation (NSF) has recognized this and defined the '*Grand Challenges*', the fundamental problems of science and engineering that require high performance computers to solve:
   - Advanced New Materials
   - Prediction of Climate Change
   - Quantum Chromodynamics and Condensed Matter Theory
@@ -91,7 +105,7 @@ Overview of HPC
   - Cancer Detection and Therapy  
   
 
-```{callout} The main reason for having HPC
+```{callout} The main reason for using HPC
 To be able to solve bigger and more complex problems!
 
 You can tackle **bigger problems in the same amount of time** and/or you can solve **the same sized problems in less time**.

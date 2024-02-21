@@ -13,16 +13,18 @@ on remote computing platforms.
  
    120 min ; Introduction to HPC
    120 min ; Working on the Cluster
+..
    120 min ; JUBE benchmarking
    120 min ; Julia for HPC
+..
 
+..
+   .. toctree::
+   :maxdepth: 1
+   :caption: Before the workshop
 
-.. toctree::
-  :maxdepth: 1
-  :caption: Before the workshop
-
-  preparation.md
-
+   preparation.md
+..
 .. toctree::
    :maxdepth: 1
    :caption: Introduction to HPC
@@ -33,6 +35,7 @@ on remote computing platforms.
    HPC-intro/HPC-parallel.md
    HPC-intro/HPC-examples.md
    HPC-intro/HPC-infra.md
+   HPC-intro/HPC-demo.md
 
 .. toctree::
    :maxdepth: 1
@@ -62,7 +65,7 @@ on remote computing platforms.
    quick-reference
    EDIH AI4Health.CRO <https://ai4healthcro.eu>
    HybridScale project <https://www.irb.hr/eng/Scientific-Support-Centres/Centre-for-Informatics-and-Computing/Projects/HRZZ/Scalable-high-performance-algorithms-for-future-heterogeneous-distributed-computer-systems>
-   NCC-HPC Croatia <https://www.hpc-cc.hr/>
+   HPC-CC Croatia <https://www.hpc-cc.hr/>
 
 
 
