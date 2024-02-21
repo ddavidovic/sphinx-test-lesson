@@ -80,12 +80,12 @@ After the key pairs is created, the public key (the one with the extension `*.pu
 To log into to the Supek, we have to connect to the GPU login node: *login-gpu.hpc.srce.hr* using `ssh` by providing your user name and the path to the private key file.
 Once you are logged, all interaction with the cluster are done from the login node. There is no possibility to directly access any of the compute nodes.
 
-<link rel="stylesheet" type="text/css" href="/_static/asciinema-player.css" />
+<link rel="stylesheet" type="text/css" href="../../_static/asciinema-player.css" />
 <body>
   <div id="login-supek"></div>
-  <script src="/_static/asciinema-player.min.js"></script>
+  <script src="../../_static/asciinema-player.min.js"></script>
   <script>
-    AsciinemaPlayer.create('/extra/login-supek.cast', document.getElementById('login-supek'), {
+    AsciinemaPlayer.create('../../extra/login-supek.cast', document.getElementById('login-supek'), {
       loop: false,
       fit: "width",
       terminalFontSize: 'medium',
@@ -102,12 +102,12 @@ To transfer data between local computer and the cluster (i.e. login node) can be
 
 An example of copying files from the local computer to the Supek using scp command line tool.
 
-<link rel="stylesheet" type="text/css" href="/_static/asciinema-player.css" />
+<link rel="stylesheet" type="text/css" href="../../_static/asciinema-player.css" />
 <body>
   <div id="copy-supek"></div>
-  <script src="/_static/asciinema-player.min.js"></script>
+  <script src="../../_static/asciinema-player.min.js"></script>
   <script>
-    AsciinemaPlayer.create('/extra/copy.cast', document.getElementById('copy-supek'), {
+    AsciinemaPlayer.create('../../extra/copy.cast', document.getElementById('copy-supek'), {
       loop: false,
       fit: "width",
       terminalFontSize: 'medium',
@@ -149,12 +149,12 @@ In HPC clusters, several users often work simultaneously with different applicat
 
 Nowadays, one of the most common tools of the pre-installed appliation management in the HPC envorionment is called `Modulefiles`. The basic command is `module` and all changes on the environment variables are applicable only in the current session.
 
-<link rel="stylesheet" type="text/css" href="/_static/asciinema-player.css" />
+<link rel="stylesheet" type="text/css" href="../../_static/asciinema-player.css" />
 <body>
   <div id="module-supek"></div>
-  <script src="/_static/asciinema-player.min.js"></script>
+  <script src="../../_static/asciinema-player.min.js"></script>
   <script>
-    AsciinemaPlayer.create('/extra/module.cast', document.getElementById('module-supek'), {
+    AsciinemaPlayer.create('../../extra/module.cast', document.getElementById('module-supek'), {
       loop: false,
       fit: "width",
       terminalFontSize: 'medium',
@@ -168,12 +168,12 @@ The command `module list` shows the currently loaded modules, i.e. the applicati
 
 In the followin video is shown the loading of a several module required to execute our code.
 
-<link rel="stylesheet" type="text/css" href="/_static/asciinema-player.css" />
+<link rel="stylesheet" type="text/css" href="../../_static/asciinema-player.css" />
 <body>
   <div id="load-modules-supek"></div>
-  <script src="/_static/asciinema-player.min.js"></script>
+  <script src="../../_static/asciinema-player.min.js"></script>
   <script>
-    AsciinemaPlayer.create('/extra/load-module.cast', document.getElementById('load-modules-supek'), {
+    AsciinemaPlayer.create('../../extra/load-module.cast', document.getElementById('load-modules-supek'), {
       loop: false,
       fit: "width",
       terminalFontSize: 'medium',
@@ -184,12 +184,60 @@ In the followin video is shown the loading of a several module required to execu
 </body>
 
 ---
-### Preparing job script file
+### Prepare and submit job
 
+The ChASE library is first cloned from the GitHub
+```
+git clone https://github.com/ChASE-library/ChASE.git
+```
+and then compiled using `cmake` command (the commands are packed in the `gnu-activate.sh` files): 
+```
+cmake -B build-gnu-test \
+ -DBUILD_WITH_EXAMPLES=ON \
+ -DCHASE_OUTPUT=ON \
+ -DCMAKE_CXX_COMPILER=CC \
+ -DCMAKE_C_COMPILER=cc \
+ -DCMAKE_Fortran_COMPILER=ftn \
+ -DCMAKE_CUDA_COMPILER=nvcc -DCMAKE_CUDA_FLAGS="--allow-unsupported-compiler"
 
----
-### Submit job
+cmake --build $folder
+```
 
+which will find the reqired dependencies for our program and prepare `Makefile` (first call to `cmake`) and then compile the application (second `cmake`). The executables are located in the `build-gnu-test` files under subfolder `examples`
+
+Now, the ChASE is compiled, we can create a simple script file describing our job.
+
+<link rel="stylesheet" type="text/css" href="../../_static/asciinema-player.css" />
+<body>
+  <div id="load-modules-supek"></div>
+  <script src="../../_static/asciinema-player.min.js"></script>
+  <script>
+    AsciinemaPlayer.create('../../extra/load-module.cast', document.getElementById('load-modules-supek'), {
+      loop: false,
+      fit: "width",
+      terminalFontSize: 'medium',
+      cols: 100,
+      rows: 30,
+      });
+  </script>
+</body>
+
+In the script we define the job parameters that the scheduler requires for the allocation of resources (lines beginning with the keyword `#PBS`). The remaining lines are standard Linux commands that prepare environment variables, load modules, define paths, etc. Finally, the executable file of ChASE is started with the program `mpiexec`, which starts our executable file in parallel in 4 parallel processes, each running on a GPU device.
+
+<link rel="stylesheet" type="text/css" href="../../_static/asciinema-player.css" />
+<body>
+  <div id="prepare-run-chase"></div>
+  <script src="../../_static/asciinema-player.min.js"></script>
+  <script>
+    AsciinemaPlayer.create('../../extra/prepare-chase.cast', document.getElementById('prepare-run-chase'), {
+      loop: false,
+      fit: "width",
+      terminalFontSize: 'medium',
+      cols: 100,
+      rows: 30,
+      });
+  </script>
+</body>
 
 ### Check job status
 
