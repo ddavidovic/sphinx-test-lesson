@@ -41,7 +41,7 @@ The clusters use resource management and job submission systems - the compute no
 ```{figure} ../img/demo-run.png
 An example of a typical HPC workflow.
 ```
-
+---
 ### Generate SSH keys
 
 The first step is to authenticate the computer from which you plan to access the computer cluster. In this demo we will show to create SSH keys using command line. For more options check the Supek [documentation](https://wiki.srce.hr/pages/viewpage.action?pageId=121966392) (see 'Pristup klasteru Supek')
@@ -55,8 +55,8 @@ The first step is to authenticate the computer from which you plan to access the
     AsciinemaPlayer.create('../../extra/keygen.cast', document.getElementById('sshkey-gen'), {
       loop: false,
       fit: "width",
-      terminalFontSize: 'big',
-      cols: 55,
+      terminalFontSize: 'medium',
+      cols: 100,
       rows: 30,
       markers: [8.85],
       pauseOnMarkers: true
