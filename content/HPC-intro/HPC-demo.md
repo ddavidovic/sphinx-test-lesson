@@ -18,11 +18,11 @@ HR HPC CC trenutno djeluje u sklopu projekta EuroCC 2 (2023 - 2025) čiji je cil
 ```
 -->
 
-In this demonstration, we will show you the basic principle of how to access an HPC cluster, prepare a simple job and execute it on the compute nodes. The test system is the supercomputer [Supek](HPC-infra.md) operated by the University Computing Centre, University of Zagreb. The basic principles of work demonstrated in this course are similar on all other clusters and supercomputers, however, each might have its own software stack, hardware architecture and storage system.
+In this demonstration, we will show you the basic principle of how to access an HPC cluster, prepare a simple job and execute it on the compute nodes. The test system is the supercomputer [Supek](HPC-infra.md) operated by the University of Zagreb, University Computing Centre. The test application running today is [ChASE](https://github.com/ChASE-library/ChASE), a Chebyshev Accelerated Subsapce Eigensolver for Dense Eigenproblems, a numerical library for solving large and complex eigenvalue problems on distributed computing systems.
 
-The clusters your SSH protocol to access them.
+The working principles demonstrated in this course are also applicable to all other clusters and supercomputers, but each may have its own software stack, hardware architecture and storage system.
 
-The clusters use resource management and job submission systems - the compute nodes cannot be accessed directly by the user.
+user.
 
 
 ## A typical cluster workflow
@@ -74,10 +74,11 @@ After the key pairs is created, the public key (the one with the extension `*.pu
   </video>
 </body>
 
-
+---
 ### Loggin to the cluster (login node)
 
-To log into to the Supek, we have to connect to the GPU login node: *login-gpu.hpc.srce.hr* by providing your user name and the path to the private key file.
+To log into to the Supek, we have to connect to the GPU login node: *login-gpu.hpc.srce.hr* using `ssh` by providing your user name and the path to the private key file.
+Once you are logged, all interaction with the cluster are done from the login node. There is no possibility to directly access any of the compute nodes.
 
 <link rel="stylesheet" type="text/css" href="/_static/asciinema-player.css" />
 <body>
@@ -94,4 +95,102 @@ To log into to the Supek, we have to connect to the GPU login node: *login-gpu.h
   </script>
 </body>
 
-Add figure Authentication -> Logging in -> Copying files -> Nodes and partitions -> Modules -> Running jobs with PBS (qsub) -> Running jobs with batch scripts (qsub)
+---
+### Copying files
+
+To transfer data between local computer and the cluster (i.e. login node) can be done by using both graphical and command-ine transfer tools, as long as they support secure transfer protocol. For example [MobaXterm](https://mobaxterm.mobatek.net/) or [WinSCP](https://winscp.net/eng/download.php) for Windows and `scp` and `rsync` command line tools on Linux.
+
+An example of copying files from the local computer to the Supek using scp command line tool.
+
+<link rel="stylesheet" type="text/css" href="/_static/asciinema-player.css" />
+<body>
+  <div id="copy-supek"></div>
+  <script src="/_static/asciinema-player.min.js"></script>
+  <script>
+    AsciinemaPlayer.create('/extra/copy.cast', document.getElementById('copy-supek'), {
+      loop: false,
+      fit: "width",
+      terminalFontSize: 'medium',
+      cols: 100,
+      rows: 30,
+      });
+  </script>
+</body>
+
+The example show how to transfer the entire content of the folder `TiO2` from the local computer to the folder `DATA` at the Supek login node.
+
+---
+### Job queues
+
+The compute nodes are grouped into job queues, based on the specific use. For example on Supek are defined 9 [job queues](https://wiki.srce.hr/pages/viewpage.action?pageId=121966239) each tailored for a specific types of jobs. 
+The next command are run on the login node of the Supek.
+
+To list all available queues on the system run:
+```
+qstat -Q
+```
+
+To list all the jobs that are currently running in the `gpu` queueu or are in the pending (waiting) can be inspected by running:
+
+```
+qstat -p gpu
+```
+
+Print the full list of nodes with their loads and the jobs currently running on them.
+```
+pbsnodes -aSj
+```
+
+
+---
+### Prepare working environment on the login node
+
+In HPC clusters, several users often work simultaneously with different applications. Therefore, the applications in your current working environment are not activated by default. The reason for this is that users can isolate their software environments for their specific needs, easily switch between different versions of the same application (e.g. a researcher needs both Python 2.7 and 3.8 for different projects) and support application dependency management and the reduction of possible collisions.
+
+Nowadays, one of the most common tools of the pre-installed appliation management in the HPC envorionment is called `Modulefiles`. The basic command is `module` and all changes on the environment variables are applicable only in the current session.
+
+<link rel="stylesheet" type="text/css" href="/_static/asciinema-player.css" />
+<body>
+  <div id="module-supek"></div>
+  <script src="/_static/asciinema-player.min.js"></script>
+  <script>
+    AsciinemaPlayer.create('/extra/module.cast', document.getElementById('module-supek'), {
+      loop: false,
+      fit: "width",
+      terminalFontSize: 'medium',
+      cols: 100,
+      rows: 30,
+      });
+  </script>
+</body>
+
+The command `module list` shows the currently loaded modules, i.e. the applications loaded in my environment. There is only one module, Python version 3.10, which was needed for the little tool called `asciinema`, which allowed me to record my terminal window. The command `module avail` shows all available modules that are installed in the system. Then we use `module spider` to search for a specific module called `pytorch`, which lists 4 different versions of the pytorch framework that are pre-installed on the system. Finally, we can check what the specific module (`pytorch/2.0.0`) would do in our environment if it were loaded. 
+
+In the followin video is shown the loading of a several module required to execute our code.
+
+<link rel="stylesheet" type="text/css" href="/_static/asciinema-player.css" />
+<body>
+  <div id="load-modules-supek"></div>
+  <script src="/_static/asciinema-player.min.js"></script>
+  <script>
+    AsciinemaPlayer.create('/extra/load-module.cast', document.getElementById('load-modules-supek'), {
+      loop: false,
+      fit: "width",
+      terminalFontSize: 'medium',
+      cols: 100,
+      rows: 30,
+      });
+  </script>
+</body>
+
+---
+### Preparing job script file
+
+
+---
+### Submit job
+
+
+### Check job status
+
+
