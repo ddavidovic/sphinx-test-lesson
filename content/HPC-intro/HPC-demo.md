@@ -212,7 +212,7 @@ Now, the ChASE is compiled, we can create a simple script file describing our jo
   <div id="load-modules-supek"></div>
   <script src="../../_static/asciinema-player.min.js"></script>
   <script>
-    AsciinemaPlayer.create('../../extra/load-module.cast', document.getElementById('load-modules-supek'), {
+    AsciinemaPlayer.create('../../extra/load-modules.cast', document.getElementById('load-modules-supek'), {
       loop: false,
       fit: "width",
       terminalFontSize: 'medium',
@@ -239,6 +239,7 @@ In the script we define the job parameters that the scheduler requires for the a
   </script>
 </body>
 
+---
 ### Check job status
 
 

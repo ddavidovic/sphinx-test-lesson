@@ -33,7 +33,6 @@ on remote computing platforms.
    HPC-intro/HPC-def.md
    HPC-intro/HPC-arch.md
    HPC-intro/HPC-parallel.md
-   HPC-intro/HPC-examples.md
    HPC-intro/HPC-infra.md
    HPC-intro/HPC-demo.md
 
