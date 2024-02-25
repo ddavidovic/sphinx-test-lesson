@@ -1,4 +1,4 @@
-Workshop on practical usage of HPC systems
+Workshop on the practical use of HPC systems
 ==========================================
 
 The workshop is dedicated to supporting researchers who utilize computer clusters and 
