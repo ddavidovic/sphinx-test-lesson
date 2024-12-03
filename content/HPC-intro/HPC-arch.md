@@ -75,9 +75,9 @@ Graph taken from [https://www.top500.org/statistics/list/](https://www.top500.or
 An extremely large cluster computers comprising of specially designed hardware optimized for parallel processing, including specialized processors such as GPUs, high-speed interconnection and large-scale shared storage systems. Supercomputers usually consists of millions of processing cores and can deliver sustained performance in petaflops.
 
 ```{callout} Explore supercomputers (3D virtual tour)
-**[Fugaku](https://my.matterport.com/show/?m=2TLoTcWigBf)** - 4th largest supercomputer in the World
+**[Fugaku](https://my.matterport.com/show/?m=2TLoTcWigBf)** - 6th largest supercomputer in the World
 
-**[LUMI](https://360interactive.ade.fi/live/LUMI360/)** - the fastest supercomputer in Europe (Finland)
+**[LUMI](https://360interactive.ade.fi/live/LUMI360/)** - 8th in the World, 3rd in Europe (Finland)
 ```
 
 <!--

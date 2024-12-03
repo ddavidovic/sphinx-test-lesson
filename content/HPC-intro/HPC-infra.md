@@ -2,7 +2,7 @@
 
 Supercomputers are substantial and costly machines utilized across academia, industry, business, and the military, playing an increasingly strategic role. Currently, a fierce competition exists between the USA and China in terms of the number of installed HPC systems and their computational power, with Europe trailing behind these two leaders.
 
-The list of the world's fastest supercomputers can be found in the renowned **[Top500](https://www.top500.org/lists/top500/2023/06/)** list, which is updated twice a year (in June and November). This list provides comprehensive technical details and statistics for the available systems, encompassing computing systems from both academic and private sectors. The ranking is based on the achieved performance (measured in PFLOPS) using the **[LINPACK Benchmark](https://www.netlib.org/benchmark/hpl/)** for distributed-memory LU factorization with partial pivoting in double-precision arithmetic.
+The list of the world's fastest supercomputers can be found in the renowned **[Top500](https://www.top500.org/lists/top500/2024/11/)** list, which is updated twice a year (in June and November). This list provides comprehensive technical details and statistics for the available systems, encompassing computing systems from both academic and private sectors. The ranking is based on the achieved performance (measured in PFLOPS) using the **[LINPACK Benchmark](https://www.netlib.org/benchmark/hpl/)** for distributed-memory LU factorization with partial pivoting in double-precision arithmetic.
 
 An additional metric for ranking HPC systems is the **[High-Performance Conjugate Gradients (HPCG)](https://www.hpcg-benchmark.org/)** benchmark. This benchmark is designed to evaluate computational and data access patterns that closely align with a wide range of significant applications, assessing performance in areas that the LINPACK benchmark may not fully address.
 
@@ -150,6 +150,8 @@ The complete technical information on all EuroHPC JU Supercomputer systems (as o
 - Development
 - Academic Fast Track
 - Industry Fast Track
+
+More information on the types of access can be found [here](https://www.hpc-cc.hr/EuroHPC_resursi)(in Croatian)
 ```
 
 ```{figure} ../img/EuroHPC_access_modes.png

@@ -11,15 +11,15 @@ Shared-memory vs. distributed-memory system arhitecture.
 ```
 
 ```{Callout} **Shared memory**
-Is a type of system architecture (e.g. computer) that have a multiple physical processors having access to the common physical memory space. This means that all processors can read and write data to the same memory locations and exchange information.
+A type of system architecture (e.g. computer) that have a multiple physical processors having access to the common physical memory space. This means that all processors can read and write data to the same memory locations and exchange information.
 
-**Advantages:** simpler to programm, no need for explicit data transfers or sychronizationa among processors.
+**Advantages:** simpler to program, no need for explicit data transfers or sychronizationa among processors.
 
-**Disadvantages:** can cause contention and scalability issues, processors compete for the memory access and bandwidth.
+**Disadvantages:** can cause contention and scalability issues, processors compete for the memory access and bandwidth, cannot be easily scaled.
 ```
 
 ```{Callout} **Distributed memory**
-Is a type of system architecture in which each processors or node has it own local memory and they communicate with each other through message passing. This means that each processor can access only its own memory space, and exchange information with other processors by sending and receiving messages.
+A type of system architecture in which each processors or node has it own local memory and they communicate with each other through message passing. This means that each processor can access only its own memory space, and exchange information with other processors by sending and receiving messages.
 
 **Advantages:** avoid contention and scalability, memory size does not limit the number of processors.
 
